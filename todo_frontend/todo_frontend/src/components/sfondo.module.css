@@ -22,6 +22,7 @@
 .left > div.head_l:hover {
   cursor: pointer;
   transform: scale(1.3);
+  background-color: rgba(255, 228, 196, 0.399);
 }
 
 
@@ -37,13 +38,13 @@
     
 }
 
-.right > div.head_r {
+.right > button.head_r {
     background-color: bisque;
     border-radius: 3px;
     padding : 5px;
 }
 
-.right > div.head_r:hover {
+.right > button.head_r:hover {
   cursor: pointer;
   transform: scale(1.3);
 }
