@@ -14,7 +14,7 @@ function Sfondo() {
   functionUpdate(userAction)
   }
 */
-  const [contatore,functionUpdate] = useState(update_value)
+  const [user_action,functionUpdate] = useState(update_value)
   const evento = (item) =>{
     functionUpdate(item)
   }
@@ -33,9 +33,7 @@ function Sfondo() {
                 <button onClick={() => evento('Logout')}className={style.head_r} id={style.logout}>Logout</button>
             </section>
         </header>
-<div>{contatore}</div>
-        
-<button onClick={evento}> </button>
+     <Auth data={[user_action,"block"]}></Auth>      
     </React.Fragment>
   );
 }
