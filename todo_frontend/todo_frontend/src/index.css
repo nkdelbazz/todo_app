@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url("./asset/sfondo_todo.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 110%;
+
 }
 
 code {

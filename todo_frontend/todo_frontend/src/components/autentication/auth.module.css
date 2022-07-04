@@ -14,11 +14,49 @@
 
 
   .modalContent {
-    background-color: #1c181849;
+    background-color: none;
     margin: auto;
-    padding: 20px;
-    border: 5px solid rgba(136, 136, 136, 0.673);
-    border-radius: 10px;
-    width: 30%;
-    color: blue;
+    width: 400px;
+  }
+
+  h4{
+    text-align: center;
+    color: rebeccapurple;
+    font-size: 20px;
+  }
+  
+  .left_td{
+    text-align: left;
+  }
+
+
+  .form_section{
+    text-align: center;
+    border: solid rgba(97, 80, 80, 0.671) 2px;
+    border-bottom: none;
+    border-top: none;
+    background-color: rgba(28, 20, 10, 0.086);
+    border-radius: 4px;
+    color: rgba(116, 131, 131, 0.401);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  input{
+    background-color: rgba(128, 128, 128, 0.362) ;
+    border: solid black 1px;
+    border-radius: 5px;
+  }
+
+  input:focus{
+    outline: none !important;
+    border-color: #1666b5;
+    box-shadow: 10px #463721e2;
+    border: solid black 1px;
+    background-color: rgba(255, 228, 196, 0.363);
+  }
+
+
+  .submit:hover{
+    cursor: pointer;
+    text-shadow: 0 0 1px rgb(88, 44, 44), 0 0 2px rgb(67, 55, 55), 0 0 3px rgb(109, 96, 23);
   }

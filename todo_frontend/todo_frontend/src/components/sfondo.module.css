@@ -59,6 +59,18 @@
 }
 
 
+.login_disabled{
+    background-color: rgba(76, 80, 83, 0.237);
+    color: brown;
+}
+
+
+button:disabled{
+    color: rgba(0, 0, 0, 0.279);
+    background-color: rgba(128, 128, 128, 0.274);
+    pointer-events: none;
+    cursor: pointer;
+}
 /*
 .header{
     background-color: black;
