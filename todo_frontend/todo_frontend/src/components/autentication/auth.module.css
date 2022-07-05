@@ -14,9 +14,13 @@
 
 
   .modalContent {
-    background-color: none;
+    background-color: rgba(33, 22, 8, 0.26);
     margin: auto;
     width: 400px;
+    border-top: solid rgba(97, 80, 80, 0.671) 2px;
+    border-bottom: solid rgba(97, 80, 80, 0.671) 2px;
+    border-radius: 5px;
+    
   }
 
   h4{
@@ -59,4 +63,21 @@
   .submit:hover{
     cursor: pointer;
     text-shadow: 0 0 1px rgb(88, 44, 44), 0 0 2px rgb(67, 55, 55), 0 0 3px rgb(109, 96, 23);
+  }
+
+  button#button_submit {
+    background-color: rgba(255, 228, 196, 0.363);
+    color: rgba(255, 228, 196, 0.392);
+    border-radius: 5px;
+  }
+
+  button#button_submit:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    width: 50px;
+    height: 90%;
+    background-color: rgba(255, 228, 196, 0.707);
+    color: rgba(255, 228, 196, 0.886);
+    color: rgba(103, 11, 11, 0.808);
+
   }

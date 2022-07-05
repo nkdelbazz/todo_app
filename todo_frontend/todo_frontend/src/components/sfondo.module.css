@@ -71,26 +71,3 @@ button:disabled{
     pointer-events: none;
     cursor: pointer;
 }
-/*
-.header{
-    background-color: black;
-    opacity: 0.6;
-    display: flex;
-    column-gap: 20px;
-    align-items: center;
-    height: 50px;
-    padding-left: 10px;
-}
-
-
-.header > div.head {
-    background-color: bisque;
-    border-radius: 3px;
-    padding : 5px;
-}
-
-.header > div.head:hover {
-  cursor: pointer;
-  transform: scale(1.3);
-}
-*/
