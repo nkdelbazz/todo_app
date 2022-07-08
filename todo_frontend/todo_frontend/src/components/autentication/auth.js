@@ -2,10 +2,11 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import { useState , useEffect } from 'react';
 import styles from './auth.module.css';
+import Authuser from './authuser';
 
 var _action = "";
 var _show = "";
-
+var userPassare = "";
 function Auth(props) {
   _action = props.data[0]
 
@@ -22,13 +23,20 @@ DA FARE : onChange={handlePasswordChange}
 
   */
 
-
+  const [userDatabase,callUser] = useState(false)
   const [show,functionUpdate] = useState(_show)
   
   const richiesta = (data) => {
     console.log(data); // LOGS DATA FROM CHILD (My name is Dean Winchester... &)
-    functionUpdate("none")
-    props.func(_action)
+    console.log("email:" + email + "<br> password:" + password )
+    userPassare = [{
+      "email":email,
+      "password":password
+    }]
+    callUser(true)
+
+   // functionUpdate("none")
+   // props.func(_action)
   }
 
   const [password, setPassword] = useState('')
@@ -59,6 +67,11 @@ DA FARE : onChange={handlePasswordChange}
     return () => clearTimeout(timeOutId);
   }, [email, password]) // Only re-run the effect if name or email change
 
+
+
+
+
+
   function getControlEmail(){
     setValidationEmail(validation_email)
   }
@@ -67,6 +80,10 @@ DA FARE : onChange={handlePasswordChange}
     setValidationPassword(validation_email)
   }
 
+  if(userDatabase)
+    {
+      return (<Authuser user={[email,password]}></Authuser>)
+    }
 
   switch (_action) {
     case "Login":
@@ -114,7 +131,7 @@ DA FARE : onChange={handlePasswordChange}
               </div>
               </div>
             </div>
-          </React.Fragment>); 
+          </React.Fragment>)
       break;
 
     case "Logout":
